@@ -1,0 +1,68 @@
+import {
+    galaxy,
+    galaxy1,
+    galaxy2,
+    xiaomi,
+    xiaomi1,
+    xiaomi2,
+    honor,
+    honor1,
+    honor2,
+    tecnop,
+    tecnop1,
+    tecnop2,
+    ipad,
+    ipad1,
+    ipad2,
+    setlike,
+    likeSet
+} from "../sharedData/assetsImports"
+
+const tabletCatalog = [
+    {
+        id: 1,
+        discount: "-4%",
+        techImg: [galaxy, galaxy1, galaxy2],
+        title: "11' Планшет Samsung Galaxy Tab A9 + 5G 128 ГБ серый",
+        price: 84999,
+        discountPrice: 87999,
+        isAviavable: false,
+        setLikeImg: setlike,
+        likeSetsImg: likeSet,
+    },
+    {
+        id: 2,
+        discount: "-10%",
+        techImg: [xiaomi, xiaomi1, xiaomi2],
+        title: "12.1' Планшет Xiaomi Redmi Pad Pro Wi-Fi 256 ГБ серый",
+        price: 42980,
+        discountPrice: 47756,
+        isAviavable: true,
+        setLikeImg: setlike,
+        likeSetsImg: likeSet,
+    },
+    {
+        id: 3,
+        discount: "-15%",
+        techImg: [honor, honor1, honor2],
+        title: "12.1' Планшет HONOR Pad 9 5G 256 ГБ серый",
+        price: 11999,
+        discountPrice: 14117,
+        isAviavable: false,
+        setLikeImg: setlike,
+        likeSetsImg: likeSet,
+    },
+    {
+        id: 4,
+        discount: "-4%",
+        techImg: [tecnop, tecnop1, tecnop2],
+        title: "10.95' Планшет Tecno Megapad 11 LTE 256 ГБ серый",
+        price: 17665,
+        discountPrice: 87999,
+        isAviavable: true,
+        setLikeImg: setlike,
+        likeSetsImg: likeSet,
+    },
+]
+
+export default tabletCatalog

@@ -1,0 +1,134 @@
+.cart__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.cart__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 1;
+}
+
+.cart__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 1;
+    margin: 10px;
+}
+
+.cart__list-item .cart__list-img {
+    max-width: 100px;
+}
+
+.cart__title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--chernyy);
+    font-size: 16px;
+}
+
+.back__to-home {
+    color: var(--chernyy);
+}
+
+.cart__title h1 {
+    font-size: 25px;
+}
+
+.cart__title span{
+    font-size: 24px;
+}
+
+
+.cart__is-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.cart__is-empty p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--chernyy);
+}
+
+.cart__btn-remove {
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--fioletovyy);
+    border-radius: 4px;
+    width: 99px;
+    height: 32px;
+    gap: 15px;
+}
+
+.wrapper__iner-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.wrapper__iner-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item__price-cart {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--chernyy);
+}
+
+.minus__from-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.plus__to-cart {
+    cursor: pointer;
+}
+
+.trashcan {
+    cursor: pointer;
+}
+
+.back-to-catalog {
+    display: flex;
+    border-radius: 8px;
+    padding: 10px 17px;
+    width: 267px;
+    height: 49px;
+    background: var(--siniy);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--belyy);
+    justify-content: center;
+    align-items: center;
+}

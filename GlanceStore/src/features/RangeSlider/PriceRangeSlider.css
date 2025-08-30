@@ -1,0 +1,26 @@
+.price-range-slider {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.slider {
+    display: flex;
+    width: 120px;
+}
+
+.slider-values {
+    display: flex;
+    gap: 20px;
+}
+
+.range__input {
+    width: 75px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
