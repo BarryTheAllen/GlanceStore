@@ -57,13 +57,26 @@
     width: 164px;
     height: 44px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     color: var(--belyy);
     background: var(--siniy);
-        margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+
+.addtocart__btn.active {
+    background-color: #f44336;
+}
+
+.addtocart__btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
 }
 
 .set__like-btn {

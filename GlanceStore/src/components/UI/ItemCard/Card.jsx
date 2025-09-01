@@ -1,21 +1,21 @@
 import Slider from "../../pages/HomeSection/slider/Slider";
 import { useCartActions } from "../../hooks/cart/useCartActions";
+import { useCart } from "../../hooks/cart/useCart";
 import { useNavigate } from "react-router";
 import "../ItemCard/Card.css";
 import { useFavActions } from "../../hooks/favorites/useFavActions";
 import { useFavorites } from "../../hooks/favorites/useFavorites";
 
 const Card = ({ item }) => {
-
     const navigate = useNavigate();
     
     const { favorites } = useFavorites();
-
+    const { cart } = useCart();
     const { handleCart } = useCartActions();
-
     const { toggleLike } = useFavActions();
 
     const isLiked = favorites?.some(favItem => favItem.id === item.id) || false;
+    const isInCart = cart?.some(cartItem => cartItem.id === item.id) || false;
 
     const handleOpenCard = () => {
         navigate("/carddescription", {
@@ -49,8 +49,11 @@ const Card = ({ item }) => {
                         />
                     </div>
                 </div>
-                <button className="addtocart__btn" onClick={() => handleCart(item)}>
-                    В корзину
+                <button 
+                    className={`addtocart__btn ${isInCart ? 'active' : ''}`}
+                    onClick={() => handleCart(item)}
+                >
+                    {isInCart ? 'Удалить из корзины' : 'В корзину'}
                 </button>
             </div>
         </div>
