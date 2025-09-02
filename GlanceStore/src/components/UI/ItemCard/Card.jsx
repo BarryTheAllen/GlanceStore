@@ -1,10 +1,10 @@
 import Slider from "../../pages/HomeSection/slider/Slider";
-import { useCartActions } from "../../hooks/cart/useCartActions";
-import { useCart } from "../../hooks/cart/useCart";
+import { useCartActions } from "../../../hooks/cart/useCartActions";
+import { useCart } from "../../../hooks/cart/useCart";
 import { useNavigate } from "react-router";
 import "../ItemCard/Card.css";
-import { useFavActions } from "../../hooks/favorites/useFavActions";
-import { useFavorites } from "../../hooks/favorites/useFavorites";
+import { useFavActions } from "../../../hooks/favorites/useFavActions";
+import { useFavorites } from "../../../hooks/favorites/useFavorites";
 
 const Card = ({ item }) => {
     const navigate = useNavigate();

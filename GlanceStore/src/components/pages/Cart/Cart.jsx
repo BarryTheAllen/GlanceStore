@@ -1,10 +1,10 @@
 import "./Cart.css"
-import { useCart }  from "../../hooks/cart/useCart"
+import { useCart }  from "../../../hooks/cart/useCart"
 import { Link } from "react-router"
 import { cartIsEmpty, trashcan, minusIco, plus } from "../../../data/sharedData/assetsImports"
-import { useCartActions } from "../../hooks/cart/useCartActions"
-import { useFavActions } from "../../hooks/favorites/useFavActions"
-import { useFavorites } from "../../hooks/favorites/useFavorites"
+import { useCartActions } from "../../../hooks/cart/useCartActions"
+import { useFavActions } from "../../../hooks/favorites/useFavActions"
+import { useFavorites } from "../../../hooks/favorites/useFavorites"
 
 const Cart = () => {
     const { toggleLike } = useFavActions()

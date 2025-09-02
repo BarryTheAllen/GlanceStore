@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router';
-import { useCartActions } from '../../hooks/cart/useCartActions';
+import { useCartActions } from '../../../hooks/cart/useCartActions';
 import styles from "./cardOpen.module.css"
 
 const CardOpen = () => {
