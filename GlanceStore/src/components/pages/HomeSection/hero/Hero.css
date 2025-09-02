@@ -20,19 +20,19 @@
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-
 }
 
 .hero-container img{
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 10px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         object-fit: cover;
         overflow: hidden;
-        max-width: 98%;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
 

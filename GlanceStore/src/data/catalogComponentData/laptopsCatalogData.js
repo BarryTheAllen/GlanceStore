@@ -41,7 +41,7 @@ const laptopsCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Игровой ноутбук ASUS TUF Gaming с 17.3-дюймовым экраном, предназначенный для серьезных геймеров. Прочный корпус, мощная начинка и эффективная система охлаждения для длительных игровых сессий."
     },
     {
         id: 2,
@@ -53,7 +53,7 @@ const laptopsCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Бюджетный 15.6-дюймовый ноутбук DEXP Atlas для повседневных задач. Подходит для работы, учебы и просмотра контента. Хорошее сочетание цены и качества."
     },
     {
         id: 3,
@@ -65,7 +65,7 @@ const laptopsCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Стильный ультрабук Chuwi GemiBook PLUS с 15.6-дюймовым экраном. Тонкий и легкий корпус, подходит для мобильной работы и путешествий."
     },
     {
         id: 4,
@@ -77,7 +77,7 @@ const laptopsCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Профессиональный MacBook Pro с процессором M4 PRO и 14.2-дюймовым дисплеей. Высокая производительность для творческих задач и разработки. Премиальное качество от Apple."
     },
     {
         id: 5,
@@ -89,7 +89,7 @@ const laptopsCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "16-дюймовый ноутбук Maibenben с большим экраном для комфортной работы и развлечений. Баланс производительности и автономности для ежедневного использования."
     },
     {
         id: 6,
@@ -101,7 +101,7 @@ const laptopsCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Надежный ноутбук OSiO BaseLine с 15.6-дюймовым экраном для офисной работы и обучения. Простая и функциональная модель для базовых потребностей."
     },
     {
         id: 7,
@@ -113,7 +113,7 @@ const laptopsCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Компактный 14-дюймовый ноутбук IRU Planio для мобильных пользователей. Легкий и портативный, идеален для работы в дороге и командировок."
     },
     {
         id: 8,
@@ -125,7 +125,7 @@ const laptopsCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Игровой ноутбук Lenovo Legion Y9000P с 16-дюймовым экраном и мощной графикой. Создан для максимальной производительности в играх и ресурсоемких приложениях."
     },
     {
         id: 9,
@@ -137,7 +137,7 @@ const laptopsCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        description: "Современный 16-дюймовый ноутбук HUAWEI MateBook D 16 с обновленной конструкцией 2024 года. Тонкие рамки, качественный экран и долгая автономная работа."
     },
 ]
 

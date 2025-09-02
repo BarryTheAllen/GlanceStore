@@ -26,7 +26,7 @@ const CardOpen = () => {
                 </div>
                 <div className={styles.block2}>
                 <h1 className={styles.title}>{product.title}</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident est accusamus facere vitae id sit qui, voluptatibus error vel odio harum quasi delectus quibusdam sequi repellat sed et veniam!</p>
+                <p>{product.description}</p>
                 </div>
                 <div className={styles.wrapper}>
                     <p className={styles.price}>

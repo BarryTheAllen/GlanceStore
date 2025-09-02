@@ -29,6 +29,7 @@ const tabletCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "11-дюймовый планшет Samsung Galaxy Tab A9+ с поддержкой 5G и памятью 128 ГБ. Идеален для работы, развлечений и мобильного интернета. Стильный серый корпус."
     },
     {
         id: 2,
@@ -40,6 +41,7 @@ const tabletCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Большой 12.1-дюймовый планшет Xiaomi Redmi Pad Pro с Wi-Fi и объемом памяти 256 ГБ. Отличный экран и производительность для работы и мультимедиа."
     },
     {
         id: 3,
@@ -51,6 +53,7 @@ const tabletCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Премиальный планшет HONOR Pad 9 с поддержкой 5G и 256 ГБ памяти. 12.1-дюймовый экран, мощная начинка и стильный серый дизайн для продуктивной работы."
     },
     {
         id: 4,
@@ -62,6 +65,7 @@ const tabletCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Универсальный планшет Tecno Megapad 11 с поддержкой LTE и 256 ГБ памяти. 10.95-дюймовый экран, современный дизайн и все необходимое для повседневных задач."
     },
 ]
 

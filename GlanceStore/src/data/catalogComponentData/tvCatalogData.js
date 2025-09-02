@@ -29,6 +29,7 @@ const tvCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "43-дюймовый телевизор Xiaomi TV A 2025 года с современным дизайном и Smart TV. Яркий экран, качественное изображение и доступ к множеству приложений и сервисов."
     },
     {
         id: 2,
@@ -40,6 +41,7 @@ const tvCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Бюджетный 43-дюймовый телевизор DEXP A431 в сером корпусе. Хорошее качество изображения, простой интерфейс и надежная работа для ежедневного просмотра."
     },
     {
         id: 3,
@@ -51,6 +53,7 @@ const tvCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "55-дюймовый телевизор TCL 55C6K с 4K разрешением и технологией HDR. Насыщенные цвета, высокая контрастность и Smart TV с голосовым управлением."
     },
     {
         id: 4,
@@ -62,6 +65,7 @@ const tvCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "55-дюймовый Samsung UE55DU7100 с Crystal UHD дисплеем. Реалистичное изображение, платформа Tizen и возможность управления голосом через Bixby."
     },
     {
         id: 5,
@@ -73,6 +77,7 @@ const tvCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Большой 65-дюймовый телевизор iFFALCON 65U85 с 4K разрешением. Современный дизайн, мощный звук и Smart TV функционал для кинопросмотров и игр."
     },
 ]
 

@@ -4,10 +4,10 @@
     justify-content: center;
     border-radius: 8px;
     flex-shrink: 1;
-    max-width: 217px !important;
-    height: 531px !important;
-    margin: 5px !important;
-    padding: 0 !important;
+    max-width: 217px;
+    height: 531px;
+    margin: 5px;
+    padding: 0;
     position: relative;
 }
 

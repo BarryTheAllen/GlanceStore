@@ -29,6 +29,7 @@ const speakerCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Компактная умная колонка Яндекс.Станция Миди с голосовым помощником Алисой. Качественный звук, управление умным домом и доступ к тысячам треков."
     },
     {
         id: 2,
@@ -40,6 +41,7 @@ const speakerCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Мощная Яндекс.Станция Макс с премиальным звуком и большим экраном. Идеальна для музыки, видео и управления умным домом через голосового помощника."
     },
     {
         id: 3,
@@ -51,6 +53,7 @@ const speakerCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Мощная портативная аудиосистема JBL Partybox 710 для вечеринок. Невероятная громкость, световые эффекты и длительное время работы от батареи."
     },
     {
         id: 4,
@@ -62,6 +65,7 @@ const speakerCatalog = [
         isAviavable: false,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Стильная аудиосистема Fiero Soundfall HS600 с современным дизайном и качественным звуком. Подходит для домашнего использования и небольших вечеринок."
     },
     {
         id: 5,
@@ -73,6 +77,7 @@ const speakerCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Миниатюрная и яркая Яндекс.Станция Мини 3 в фиолетовом цвете. Компактный размер, голосовое управление и интеграция с сервисами Яндекса."
     },
 ]
 

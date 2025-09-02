@@ -11,6 +11,7 @@ const computersCatalog = [
         isAviavable: true,
         setLikeImg: setlike,
         likeSetsImg: likeSet,
+        description: "Игровой компьютер ARDOR GAMING NEO M143 с мощным процессором и современной видеокартой для комфортного гейминга. Отличное решение для любителей игр с высокими требованиями."
     },
     {
         id: 2,
@@ -25,7 +26,8 @@ const computersCatalog = [
         builtInMemory: "512",
         RAM: "8",
         brand: "Msi",
-        cores: "8"
+        cores: "8",
+        description: "Производительный игровой ПК MSI MAG Infinite с SSD на 512 ГБ и 8 ГБ оперативной памяти. Идеален для современных игр и многозадачной работы."
     },
     {
         id: 3,
@@ -40,7 +42,8 @@ const computersCatalog = [
         builtInMemory: "128",
         RAM: "16",
         brand: "Dexp",
-        cores: "8"
+        cores: "8",
+        description: "Бюджетный игровой компьютер DEXP Mars G002 с 16 ГБ оперативной памяти и 128 ГБ встроенной памяти. Отличное начало для знакомства с миром компьютерных игр."
     },
     {
         id: 4,
@@ -55,7 +58,8 @@ const computersCatalog = [
         builtInMemory: "256",
         RAM: "4",
         brand: "Iru",
-        cores: "6"
+        cores: "6",
+        description: "Экономичный игровой ПК iRU Game с 6-ядерным процессором, 4 ГБ оперативной памяти и SSD на 256 ГБ. Подходит для нетребовательных игр и повседневных задач."
     },
     {
         id: 5,
@@ -70,7 +74,8 @@ const computersCatalog = [
         builtInMemory: "512",
         RAM: "16",
         brand: "Tecno",
-        cores: "8"
+        cores: "8",
+        description: "Компактный мини-ПК TECNO MEGA MINI Gaming G1 с мощными характеристиками: 8-ядерный процессор, 16 ГБ ОЗУ и 512 ГБ SSD. Экономит пространство без потери производительности."
     },
     {
         id: 6,
@@ -85,7 +90,8 @@ const computersCatalog = [
         builtInMemory: "256",
         RAM: "16",
         brand: "Lenovo",
-        cores: "8"
+        cores: "8",
+        description: "Мощный игровой компьютер Lenovo Legion T7 с 8-ядерным процессором, 16 ГБ оперативной памяти и быстрым SSD на 256 ГБ. Оптимизирован для профессионального гейминга."
     },
     {
         id: 7,
@@ -100,7 +106,8 @@ const computersCatalog = [
         builtInMemory: "256",
         RAM: "16",
         brand: "Asus",
-        cores: "8"
+        cores: "8",
+        description: "Компактный игровой ПК ASUS G22CH с эффективной системой охлаждения, 16 ГБ ОЗУ и SSD на 256 ГБ. Стильный дизайн и отличная производительность в одном корпусе."
     },
     {
         id: 8,
@@ -115,7 +122,8 @@ const computersCatalog = [
         builtInMemory: "256",
         RAM: "16",
         brand: "Hp",
-        cores: "8"
+        cores: "8",
+        description: "Игровая система HP OMEN с 8-ядерным процессором, 16 ГБ оперативной памяти и быстрым накопителем на 256 ГБ. Надежная производительность для самых требовательных игр."
     },
     {
         id: 9,
@@ -130,7 +138,8 @@ const computersCatalog = [
         builtInMemory: "256",
         RAM: "16",
         brand: "Lyambda",
-        cores: "8"
+        cores: "8",
+        description: "16-дюймовый ноутбук HUAWEI MateBook D 16 с современным процессором, 16 ГБ ОЗУ и SSD на 256 ГБ. Большой экран и портативность для работы и развлечений."
     },
 ]
 

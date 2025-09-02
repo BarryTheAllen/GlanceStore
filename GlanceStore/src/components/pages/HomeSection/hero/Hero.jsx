@@ -24,7 +24,7 @@ const Hero = () => {
                type: 'bullets',
             }}
             loop={true}
-             autoplay={ {delay: 500, disableOnInteraction: false} }
+             autoplay={ {delay: 2500, disableOnInteraction: false} }
               effect={'fade'}
               key={heroData.length}
               >
