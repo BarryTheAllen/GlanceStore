@@ -1,10 +1,13 @@
 .hero {
     max-width: 1280px;
     margin: 0 auto;
+    border-radius: 10px;
     display: flex;
+    height: 250px;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -54,6 +57,10 @@
 }
 
 @media (max-width: 980px) {
+
+    .hero {
+        height: auto;
+    }
 
     .swiper-container {
         display: flex;
