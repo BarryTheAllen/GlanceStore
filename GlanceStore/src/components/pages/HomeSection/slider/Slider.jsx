@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/bundle';
+import "./discount-swiper-slide.css"
+
 const Slider = ({ images }) => {
 
 

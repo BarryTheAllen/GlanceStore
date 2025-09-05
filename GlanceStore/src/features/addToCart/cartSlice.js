@@ -12,7 +12,7 @@ export const cartSlice = createSlice({
             if (inCart) {
                 const index = state.findIndex(item => item.id === cartItem.id)
 
-            if(index !== 1) {
+            if(index !== -1) {
                 state.splice(index, 1)
             }
             } else {
@@ -37,7 +37,7 @@ export const cartSlice = createSlice({
         },
         removeFromCart: (state, { payload: itemId }) => {
 
-            return state.filter(item => item.id !== itemId);
+            return state.filter(item => item.id === itemId);
             
         }
     }

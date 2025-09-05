@@ -2,6 +2,19 @@ import { useState } from 'react';
 import "./Sorter.css"
 
 const SortByPrice = ({ products, onSort }) => {
+
+  const [active, setActive] = useState(false)
+  
+  const handleSetActive = () => {
+    setActive(() => {
+      if(active === true) {
+        setActive(false)
+      } else {
+        setActive(true)
+      }
+    })
+  }
+
   const [sortOption, setSortOption] = useState('default');
 
   const handleSortChange = (option) => {
@@ -24,15 +37,14 @@ const SortByPrice = ({ products, onSort }) => {
 
   return (
     <div className="sort-by-price">
-      <select
-        value={sortOption}
-        onChange={(e) => handleSortChange(e.target.value)}
-        className="sort-select"
-      >
-        <option value="default">По умолчанию</option>
-        <option value="price-low-high">От дешевых к дорогим</option>
-        <option value="price-high-low">От дорогих к дешевым</option>
-      </select>
+      <div className="select" >
+        <span className='sorter'  onClick={() => handleSetActive()} >Сортировка</span>
+        <div className={active ? "option__wrapper-active" : "option__wrapper"}>
+          <span className='option' onClick={() => handleSortChange("default")}>По умолчанию</span>
+          <span className='option' onClick={() => handleSortChange("price-low-high")}>От дешевых к дорогим</span>
+          <span className='option' onClick={() => handleSortChange("price-high-low")}>От дорогих к дешевым</span>
+        </div>
+      </div>
     </div>
   );
 };

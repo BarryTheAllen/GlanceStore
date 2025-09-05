@@ -52,8 +52,8 @@
     }
 
    .nav__link-mob img {
-    width: 40px;
-    height: 40px;
+        width: 40px;
+        height: 40px;
    }
     .nav__link-mob {
         font-size: 14px;

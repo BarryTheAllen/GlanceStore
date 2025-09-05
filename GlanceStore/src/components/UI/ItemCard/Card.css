@@ -67,16 +67,19 @@
     color: var(--belyy);
     background: var(--siniy);
     margin-bottom: 60px;
+    transition: all 0.3s ease;
 }
 
 
 .addtocart__btn.active {
-    background-color: #f44336;
+    background-color: var(--belyy);
+    border: 2px solid var(--siniy);
+    color: var(--siniy);
 }
 
 .addtocart__btn:hover {
     opacity: 0.9;
-    transform: translateY(-2px);
+    transform: scale(1.06);
 }
 
 .set__like-btn {

@@ -10,8 +10,7 @@ const discountsData = [
         discountPrice: "87 999 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 2,
@@ -22,8 +21,7 @@ const discountsData = [
         discountPrice: "47 756 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 3,
@@ -34,8 +32,7 @@ const discountsData = [
         discountPrice: "14 117 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 4,
@@ -46,8 +43,7 @@ const discountsData = [
         discountPrice: "87 999 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 5,
@@ -58,8 +54,7 @@ const discountsData = [
         discountPrice: "47 756 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 6,
@@ -70,8 +65,7 @@ const discountsData = [
         discountPrice: "47 756 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 7,
@@ -82,8 +76,7 @@ const discountsData = [
         discountPrice: "47 756 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 8,
@@ -94,8 +87,7 @@ const discountsData = [
         discountPrice: "47 756 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
     {
         id: 9,
@@ -106,8 +98,7 @@ const discountsData = [
         discountPrice: "47 756 ₽",
         isAviavable: "В наличии",
         setLikeImg: setlike,
-        likeSetsImg: likeSet,
-        addToCart: "В корзинку",
+        likeSetsImg: likeSet
     },
 ]
 

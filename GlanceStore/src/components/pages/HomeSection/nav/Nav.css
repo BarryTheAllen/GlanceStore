@@ -12,6 +12,12 @@
     align-items: center;
     font-size: 14px;
     color: var(--seryy-temnee);
+    transition: all 0.25s ease;
+}
+
+.nav__link:hover {
+    color: var(--cherny);
+    transform: scale(1.06);
 }
 
 

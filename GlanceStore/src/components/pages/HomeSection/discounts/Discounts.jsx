@@ -6,7 +6,7 @@ import Card from "../../../UI/ItemCard/Card";
 import "./Discounts.css";
 import 'swiper/css/bundle';
 
-const Discounts = ({cardData, onAddToCart}) => {
+const Discounts = ({cardData, onAddToCart, category}) => {
 const [itemsToShow, setItemsToShow] = useState(9);
 
   useEffect(() => {
@@ -41,7 +41,11 @@ const [itemsToShow, setItemsToShow] = useState(9);
                     >
                         {cardData.map(item => (
                             <SwiperSlide key={item.id}>
-                                <Card item={item} onAddToCart={onAddToCart}/>
+                            <Card 
+                            item={{ ...item, id: `${category}_${item.id}` }} 
+                            key={`${category}_${item.id}`}
+                            onAddToCart={onAddToCart}
+                            />
                             </SwiperSlide>
                         ))}
                         <img className="swiper-button-next swiper-discounts-btn" src={RightArrowIco3}/>

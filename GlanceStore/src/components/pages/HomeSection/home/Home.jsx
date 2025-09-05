@@ -2,12 +2,12 @@ import Hero from "../hero/Hero"
 import Catalog from "../catalog/Catalog"
 import Discounts from "../discounts/Discounts"
 
-const Home = ({cardData, onAddToCart}) => {
+const Home = ({cardData, onAddToCart, category}) => {
   return (
     <>
     <Hero/>
     <Catalog/>
-    <Discounts cardData={cardData} onAddToCart={onAddToCart}/>
+    <Discounts cardData={cardData} onAddToCart={onAddToCart} category={category}/>
     </>
   )
 }
