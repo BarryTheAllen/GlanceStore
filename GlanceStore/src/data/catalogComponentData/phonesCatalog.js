@@ -3,7 +3,7 @@ import { phone1, phone2, phone3, phone4, phone5, phone6, setlike, likeSet } from
 const phonesCatalog = [
     {
         id: 1,
-        discount: "-4%",
+        discount: false,
         techImg: [phone1, phone1, phone1],
         title: "Смартфон Apple iPhone 14 128GB",
         price: 84999,
@@ -27,7 +27,7 @@ const phonesCatalog = [
     },
     {
         id: 3,
-        discount: "-15%",
+        discount: false,
         techImg: [phone3, phone3, phone3],
         title: "Смартфон HUAWEI nova Y61",
         price: 11999,
@@ -51,7 +51,7 @@ const phonesCatalog = [
     },
     {
         id: 5,
-        discount: "-3%",
+        discount: false,
         techImg: [phone5, phone5, phone5],
         title: "Смартфон Apple iPhone 14 128GB",
         price: 11999,
@@ -75,7 +75,7 @@ const phonesCatalog = [
     },
     {
         id: 7,
-        discount: "-4%",
+        discount: false,
         techImg: [phone1, phone1, phone1],
         title: "Смартфон Apple iPhone 14 128GB",
         price: 84999,
@@ -99,7 +99,7 @@ const phonesCatalog = [
     },
     {
         id: 9,
-        discount: "-15%",
+        discount: false,
         techImg: [phone3, phone3, phone3],
         title: "Смартфон HUAWEI nova Y61",
         price: 11999,

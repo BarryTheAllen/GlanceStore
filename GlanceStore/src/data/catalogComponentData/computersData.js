@@ -3,7 +3,7 @@ import { ardor, ardor1, ardor2, msi, msi1, msi2, dexp, dexp1, dexp2, iru, iru1, 
 const computersCatalog = [
     {
         id: 1,
-        discount: "-4%",
+        discount: false,
         techImg: [ardor, ardor1, ardor2],
         title: "ПК ARDOR GAMING NEO M143",
         price: 84999,
@@ -31,7 +31,7 @@ const computersCatalog = [
     },
     {
         id: 3,
-        discount: "-15%",
+        discount: false,
         techImg: [dexp, dexp1, dexp2],
         title: "ПК DEXP Mars G002",
         price: 11999,
@@ -63,7 +63,7 @@ const computersCatalog = [
     },
     {
         id: 5,
-        discount: "-3%",
+        discount: false,
         techImg: [tecno, tecno1, tecno2],
         title: "Мини ПК TECNO MEGA MINI Gaming G1",
         price: 11999,
@@ -95,7 +95,7 @@ const computersCatalog = [
     },
     {
         id: 7,
-        discount: "-8%",
+        discount: false,
         techImg: [asus, asus1, asus2],
         title: "ПК ASUS G22CH-1470KF0260",
         price: 11999,
@@ -127,7 +127,7 @@ const computersCatalog = [
     },
     {
         id: 9,
-        discount: "-19%",
+        discount: false,
         techImg: [lyambda, lyambda1, lyambda2],
         title: "16' Ноутбук HUAWEI MateBook D 16 2024 MCLF-X серый",
         price: 84999,

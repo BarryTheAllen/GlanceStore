@@ -33,7 +33,7 @@ import {
 const laptopsCatalog = [
     {
         id: 1,
-        discount: "-4%",
+        discount: false,
         techImg: [laptop1, asusl1, asusl2],
         title: "17.3' Ноутбук ASUS TUF Gaming F17 FX707ZC4-HX014 серый",
         price: 84999,
@@ -57,7 +57,7 @@ const laptopsCatalog = [
     },
     {
         id: 3,
-        discount: "-15%",
+        discount: false,
         techImg: [laptop3, chuwil1, chuwil2],
         title: "15.6' Ноутбук Chuwi GemiBook PLUS серый",
         price: 11999,
@@ -81,7 +81,7 @@ const laptopsCatalog = [
     },
     {
         id: 5,
-        discount: "-3%",
+        discount: false,
         techImg: [laptop5, benl1, benl2],
         title: "16' Ноутбук Maibenben X16A-R77446 серый",
         price: 11999,
@@ -105,7 +105,7 @@ const laptopsCatalog = [
     },
     {
         id: 7,
-        discount: "-8%",
+        discount: false,
         techImg: [laptop7, irul1, irul2],
         title: "14' Ноутбук IRU Planio 14INP серый",
         price: 11999,
@@ -129,7 +129,7 @@ const laptopsCatalog = [
     },
     {
         id: 9,
-        discount: "-19%",
+        discount: false,
         techImg: [laptop9, hua1, hua2],
         title: "16' Ноутбук HUAWEI MateBook D 16 2024 MCLF-X серый",
         price: 84999,

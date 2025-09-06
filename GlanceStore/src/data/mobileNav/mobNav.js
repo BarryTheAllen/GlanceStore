@@ -5,7 +5,7 @@ const navInfoMob = [
         id: 1,
         icon: homeIcon,
         title: "Главная",
-        href: "./Home"
+        href: "/Home"
     },
     {
         id: 2,

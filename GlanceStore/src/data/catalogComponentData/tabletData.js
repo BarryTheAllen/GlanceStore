@@ -21,7 +21,7 @@ import {
 const tabletCatalog = [
     {
         id: 1,
-        discount: "-4%",
+        discount: false,
         techImg: [galaxy, galaxy1, galaxy2],
         title: "11' Планшет Samsung Galaxy Tab A9 + 5G 128 ГБ серый",
         price: 84999,
@@ -45,7 +45,7 @@ const tabletCatalog = [
     },
     {
         id: 3,
-        discount: "-15%",
+        discount: false,
         techImg: [honor, honor1, honor2],
         title: "12.1' Планшет HONOR Pad 9 5G 256 ГБ серый",
         price: 11999,

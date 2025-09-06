@@ -25,12 +25,11 @@ const Card = ({ item }) => {
 
     return (
         <div className="stock__item">
-            <div className="wrapper__open" onClick={handleOpenCard}>
                 <div className="stock__item-link">
                 <div className="wrapper__inner">
                     <div className="wrapper__inner-item">
-                        <span className="discount">{item.discount}</span>
-                        <div className="img-inner-wrapper">
+                        <span className={item.discount ? "discount" : ""}>{item?.discount}</span>
+                        <div className="img-inner-wrapper" onClick={handleOpenCard}>
                             <Slider images={item.techImg}/>
                         </div>
                     </div>
@@ -51,7 +50,6 @@ const Card = ({ item }) => {
                     </div>
                 </div>
             </div>
-                        </div>
                 <button 
                     className={`addtocart__btn ${isInCart ? 'active' : ''}`}
                     onClick={() => handleCart(item)}

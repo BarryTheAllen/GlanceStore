@@ -21,7 +21,7 @@ import {
 const tvCatalog = [
     {
         id: 1,
-        discount: "-4%",
+        discount: false,
         techImg: [xiaomitv, xiaomitv1, xiaomitv2],
         title: "43' (108 см) Телевизор Xiaomi TV A 43 2025 черный",
         price: 84999,
@@ -45,7 +45,7 @@ const tvCatalog = [
     },
     {
         id: 3,
-        discount: "-15%",
+        discount: false,
         techImg: [tcltv, tcltv1, tcltv2],
         title: "55' (139.7 см) Телевизор TCL 55C6K черный",
         price: 11999,
@@ -69,7 +69,7 @@ const tvCatalog = [
     },
     {
         id: 5,
-        discount: "-3%",
+        discount: false,
         techImg: [falcon, falcon1, falcon2],
         title: "65' (165.1 см) Телевизор iFFALCON 65U85 черный",
         price: 11999,

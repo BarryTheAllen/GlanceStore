@@ -21,7 +21,7 @@ import {
 const speakerCatalog = [
     {
         id: 1,
-        discount: "-4%",
+        discount: false,
         techImg: [yandexspeaker, yandexspeaker1, yandexspeaker2],
         title: "Умная колонка Яндекс.Станция Миди черный",
         price: 84999,
@@ -45,7 +45,7 @@ const speakerCatalog = [
     },
     {
         id: 3,
-        discount: "-15%",
+        discount: false,
         techImg: [jblparty, jblparty1, jblparty2],
         title: "Аудиосистема JBL Partybox 710 черный",
         price: 11999,
@@ -69,7 +69,7 @@ const speakerCatalog = [
     },
     {
         id: 5,
-        discount: "-3%",
+        discount: false,
         techImg: [yandexspeakerslight, yandexspeakerslight1, yandexspeakerslight2],
         title: "Умная колонка Яндекс.Станция Мини 3 фиолетовый",
         price: 11999,
