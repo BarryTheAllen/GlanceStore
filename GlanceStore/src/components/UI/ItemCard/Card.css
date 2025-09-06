@@ -174,3 +174,7 @@
 .wrapper__inner {
     cursor: pointer;
 }
+
+.wrapper__open {
+    cursor: pointer;
+}

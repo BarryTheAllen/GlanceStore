@@ -17,7 +17,7 @@ const navInfoMob = [
         id: 3,
         icon: profileIcon,
         title: "Профиль",
-        href: "/Profile"
+        href: "/Login"
     },
 ]
 

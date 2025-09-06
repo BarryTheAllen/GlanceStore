@@ -25,8 +25,9 @@ const Card = ({ item }) => {
 
     return (
         <div className="stock__item">
-            <div className="stock__item-link">
-                <div className="wrapper__inner" onClick={handleOpenCard}>
+            <div className="wrapper__open" onClick={handleOpenCard}>
+                <div className="stock__item-link">
+                <div className="wrapper__inner">
                     <div className="wrapper__inner-item">
                         <span className="discount">{item.discount}</span>
                         <div className="img-inner-wrapper">
@@ -49,13 +50,14 @@ const Card = ({ item }) => {
                         />
                     </div>
                 </div>
+            </div>
+                        </div>
                 <button 
                     className={`addtocart__btn ${isInCart ? 'active' : ''}`}
                     onClick={() => handleCart(item)}
                 >
                     {isInCart ? 'Удалить из корзины' : 'В корзину'}
                 </button>
-            </div>
         </div>
     );
 };
