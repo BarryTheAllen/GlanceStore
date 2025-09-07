@@ -118,6 +118,11 @@
     cursor: pointer;
 }
 
+.set-like-btn {
+    width: 20px;
+    height: 20px;
+}
+
 .back-to-catalog {
     display: flex;
     border-radius: 8px;

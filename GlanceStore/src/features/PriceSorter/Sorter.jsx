@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaArrowUp } from "react-icons/fa6";
 import "./Sorter.css"
 
 const SortByPrice = ({ products, onSort }) => {
@@ -38,7 +39,7 @@ const SortByPrice = ({ products, onSort }) => {
   return (
     <div className="sort-by-price">
       <div className="select" >
-        <span className='sorter'  onClick={() => handleSetActive()} >Сортировка</span>
+        <span className='sorter'  onClick={() => handleSetActive()} >Сортировка <FaArrowUp className={active ? "arrow__sort-active" : "arrow__sort"}/></span>
         <div className={active ? "option__wrapper-active" : "option__wrapper"}>
           <span className='option' onClick={() => handleSortChange("default")}>По умолчанию</span>
           <span className='option' onClick={() => handleSortChange("price-low-high")}>От дешевых к дорогим</span>

@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router';
 import { useCartActions } from '../../../hooks/cart/useCartActions';
 import styles from "./cardOpen.module.css"
+import AddToCartBtn from '../../UI/AddToCartBtn/AddToCartBtn';
 
 const CardOpen = () => {
 
@@ -32,9 +33,7 @@ const CardOpen = () => {
                     <p className={styles.price}>
                         {product.price.toLocaleString("ru-Ru")} руб.
                     </p>
-                <button className="addtocart__btn" onClick={() => handleCart(product)}>
-                    В корзину
-                </button>
+                <AddToCartBtn item={product} />
                 </div>
         </div>
     );

@@ -1,21 +1,16 @@
 import Slider from "../../pages/HomeSection/slider/Slider";
-import { useCartActions } from "../../../hooks/cart/useCartActions";
-import { useCart } from "../../../hooks/cart/useCart";
 import { useNavigate } from "react-router";
 import "../ItemCard/Card.css";
 import { useFavActions } from "../../../hooks/favorites/useFavActions";
 import { useFavorites } from "../../../hooks/favorites/useFavorites";
-
+import AddToCartBtn from "../AddToCartBtn/AddToCartBtn";
 const Card = ({ item }) => {
     const navigate = useNavigate();
     
     const { favorites } = useFavorites();
-    const { cart } = useCart();
-    const { handleCart } = useCartActions();
     const { toggleLike } = useFavActions();
 
     const isLiked = favorites?.some(favItem => favItem.id === item.id) || false;
-    const isInCart = cart?.some(cartItem => cartItem.id === item.id) || false;
 
     const handleOpenCard = () => {
         navigate("/carddescription", {
@@ -34,7 +29,7 @@ const Card = ({ item }) => {
                         </div>
                     </div>
                 </div> 
-                <p className="stock__desc">{item.title}</p>
+                <p className="stock__desc" onClick={handleOpenCard}>{item.title}</p>
                 <div className="price__wrapper">
                     <p className="discount__price">{item.price.toLocaleString('ru-RU')} ₽</p>
                     <p className="stock__price">{item.discountPrice.toLocaleString('ru-RU')} ₽</p>
@@ -50,12 +45,7 @@ const Card = ({ item }) => {
                     </div>
                 </div>
             </div>
-                <button 
-                    className={`addtocart__btn ${isInCart ? 'active' : ''}`}
-                    onClick={() => handleCart(item)}
-                >
-                    {isInCart ? 'Удалить из корзины' : 'В корзину'}
-                </button>
+            <AddToCartBtn item={item} />
         </div>
     );
 };
