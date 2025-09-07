@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { FiSearch, FiX, FiChevronRight } from 'react-icons/fi';
 import computersCatalog from "../../data/catalogComponentData/computersData"
 import laptopsCatalog from "../../data/catalogComponentData/laptopsCatalogData"
 import phonesCatalog from "../../data/catalogComponentData/phonesCatalog"
@@ -11,6 +12,7 @@ import styles from "./Search.module.css"
 const Search = () => {
     const [value, setValue] = useState('');
     const [debouncedValue, setDebouncedValue] = useState('');
+    const [isFocused, setIsFocused] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -37,7 +39,6 @@ const Search = () => {
         const category = getProductCategory(product);
         
         setValue('');
-        
         setDebouncedValue('');
         
         navigate('/carddescription', { 
@@ -46,6 +47,11 @@ const Search = () => {
                 category: category
             } 
         });
+    };
+
+    const clearSearch = () => {
+        setValue('');
+        setDebouncedValue('');
     };
 
     const filteredProducts = useMemo(() => {
@@ -60,34 +66,59 @@ const Search = () => {
     }, [debouncedValue, productList]);
 
     return (
-        <div style={{ position: 'relative' }}>
-            <input
-                type="text"
-                placeholder="Поиск товаров..."
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-                className={styles.search__input}
-            />
+        <div className={styles.search__container}>
+            <div className={styles.search__wrapper}>
+                <FiSearch className={styles.search__icon} />
+                <input
+                    type="text"
+                    placeholder="Поиск товаров..."
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                    onFocus={() => setIsFocused(true)}
+                    onBlur={() => setTimeout(() => setIsFocused(false), 200)}
+                    className={styles.search__input}
+                />
+                {value && (
+                    <button onClick={clearSearch} className={styles.clear__button}>
+                        <FiX />
+                    </button>
+                )}
+            </div>
             
-            {debouncedValue && filteredProducts.length > 0 && (
-                <div className={styles.container}>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {(isFocused && debouncedValue) && filteredProducts.length > 0 && (
+                <div className={styles.results__container}>
+                    <div className={styles.results__header}>
+                        <span>Найдено товаров: {filteredProducts.length}</span>
+                    </div>
+                    <ul className={styles.results__list}>
                         {filteredProducts.map((product) => (
                             <li 
                                 key={product.id}
                                 onClick={() => handleProductClick(product)}
-                                className={styles.search__item}
+                                className={styles.result__item}
                             >
-                                <div className={styles.product__title}>{product.title}</div>
+                                <div className={styles.product__info}>
+                                    <div className={styles.product__title}>{product.title}</div>
+                                    <div className={styles.product__category}>
+                                        {getProductCategory(product)}
+                                    </div>
+                                </div>
+                                <FiChevronRight className={styles.arrow__icon} />
                             </li>
                         ))}
                     </ul>
                 </div>
             )}
             
-            {debouncedValue && filteredProducts.length === 0 && (
-                <div className={styles.not__found}>
-                    Товары не найдены
+            {(isFocused && debouncedValue) && filteredProducts.length === 0 && (
+                <div className={styles.no__results}>
+                    <div className={styles.no__results__icon}><FiX /></div>
+                    <div className={styles.no__results__text}>
+                        <div>Товары не найдены</div>
+                        <div className={styles.no__results__subtext}>
+                            Попробуйте изменить запрос
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
