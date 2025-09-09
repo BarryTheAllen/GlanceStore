@@ -15,12 +15,33 @@ import speakersImg from "../../assets/images/items/speakers.png"
 import tabletImg from "../../assets/images/items/tablet.png"
 import tvImg from "../../assets/images/items/tv.png"
 import rightArrowIco2 from "../../assets/images/icons/right.svg"
-import phone1 from "../../assets/images/items/phone1.png"
-import phone2 from "../../assets/images/items/phone2.png"
-import phone3 from "../../assets/images/items/phone3.png"
-import phone4 from "../../assets/images/items/phone4.png"
-import phone5 from "../../assets/images/items/phone5.png"
-import phone6 from "../../assets/images/items/phone6.png"
+import iphone14 from "../../assets/images/items/iphone14.avif"
+import iphone141 from "../../assets/images/items/iphone141.avif"
+import iphone142 from "../../assets/images/items/iphone142.avif"
+import iphone13 from "../../assets/images/items/iphone13.avif"
+import iphone131 from "../../assets/images/items/iphone131.avif"
+import iphone132 from "../../assets/images/items/iphone132.avif"
+import nova6 from "../../assets/images/items/nova6.avif"
+import nova61 from "../../assets/images/items/nova61.avif"
+import nova62 from "../../assets/images/items/nova62.avif"
+import xiaomi14c from "../../assets/images/items/xiaomi14c.avif"
+import xiaomi14c1 from "../../assets/images/items/xiaomi14c1.avif"
+import xiaomi14c2 from "../../assets/images/items/xiaomi14c2.avif"
+import samsungs25 from "../../assets/images/items/samsungs25.avif"
+import samsungs251 from "../../assets/images/items/samsungs251.avif"
+import samsungs252 from "../../assets/images/items/samsungs252.avif"
+import huaweipura80 from "../../assets/images/items/huaweipura80.avif"
+import huaweipura801 from "../../assets/images/items/huaweipura801.avif"
+import huaweipura802 from "../../assets/images/items/huaweipura802.avif"
+import iphone16 from "../../assets/images/items/iphone16.avif"
+import iphone161 from "../../assets/images/items/iphone161.avif"
+import iphone162 from "../../assets/images/items/iphone162.avif"
+import opporeno12f from "../../assets/images/items/opporeno12f.avif"
+import opporeno12f1 from "../../assets/images/items/opporeno12f1.avif"
+import opporeno12f2 from "../../assets/images/items/opporeno12f2.avif"
+import xiaominote14 from "../../assets/images/items/xiaominote14.avif"
+import xiaominote141 from "../../assets/images/items/xiaominote141.avif"
+import xiaominote142 from "../../assets/images/items/xiaominote142.avif"
 import setlike from "../../assets/images/icons/setlike.svg"
 import likeSet from "../../assets/images/icons/likeSet.svg"
 import RightArrowIco3 from "../../assets/images/icons/discnts-arrow.svg"
@@ -130,18 +151,6 @@ import minusIco from "../../assets/images/icons/minus.svg"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 export {
     catalogIcon,
     basketIcon,
@@ -159,12 +168,33 @@ export {
     tabletImg,
     tvImg,
     rightArrowIco2,
-    phone1,
-    phone2,
-    phone3,
-    phone4,
-    phone5,
-    phone6,
+    iphone14,
+    iphone141,
+    iphone142,
+    iphone13,
+    iphone131,
+    iphone132,
+    nova6,
+    nova61,
+    nova62,
+    xiaomi14c,
+    xiaomi14c1,
+    xiaomi14c2,
+    samsungs25,
+    samsungs251,
+    samsungs252,
+    huaweipura80,
+    huaweipura801,
+    huaweipura802,
+    iphone16,
+    iphone161,
+    iphone162,
+    opporeno12f,
+    opporeno12f1,
+    opporeno12f2,
+    xiaominote14,
+    xiaominote141,
+    xiaominote142,
     setlike,
     likeSet,
     RightArrowIco3,
