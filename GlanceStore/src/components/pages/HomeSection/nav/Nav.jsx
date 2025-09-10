@@ -9,11 +9,8 @@ const Nav = () => {
 
     const { cart } = useCart()
     const { favorites } = useFavorites()
-  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0)
+    const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0)
 
-
-
-    
   return (
    <>
         <li className="nav__item-icons">
