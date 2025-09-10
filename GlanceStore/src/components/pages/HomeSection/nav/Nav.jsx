@@ -1,14 +1,34 @@
-
 import { Link } from "react-router"
-import headerNavInfo from "../../../../data/header/headerNavInfo"
+import {basketIcon, profileIcon, favoritesIcon } from "../../../../data/sharedData/assetsImports"
+import { useCart }  from "../../../../hooks/cart/useCart"
+import { useFavorites } from "../../../../hooks/favorites/useFavorites"
 import "./Nav.css"
 
 const Nav = () => {
+    const { cart } = useCart()
+    const { favorites } = useFavorites()
   return (
    <>
-    {headerNavInfo .map((item) => (
-        <li className="nav__item-icons" key={item.id}><Link to={item.href} className="nav__link"><img src={item.icon} alt="catalog" className="icon" loading="lazy"/>{item.title}</Link></li>
-        ))}
+        <li className="nav__item-icons">
+          <Link className="nav__link" to={'/Cart'}>
+          <span className={cart.length > 0 ? "cart-badge active" : "cart-badge"}>{cart.length}</span>
+          <img src={basketIcon} alt="Корзина" className="icon" loading="lazy"/>
+          Корзина
+          </Link>
+        </li>
+        <li className="nav__item-icons">
+          <Link className="nav__link" to={'/Login'}>
+          <img src={profileIcon} alt="Профиль" className="icon" loading="lazy"/>
+          Профиль
+          </Link>
+        </li>
+        <li className="nav__item-icons">
+          <Link className="nav__link">
+          <span className={favorites.length > 0 ? "fav-badge active" : "fav-badge"}>{favorites.length}</span>
+          <img src={favoritesIcon} alt="Избранное" className="icon" />
+          Избранное
+          </Link>
+        </li>
    </>
   )
 }

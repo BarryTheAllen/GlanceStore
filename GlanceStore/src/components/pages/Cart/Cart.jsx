@@ -1,7 +1,7 @@
 import "./Cart.css"
 import { useCart }  from "../../../hooks/cart/useCart"
 import { Link } from "react-router"
-import { cartIsEmpty, trashcan, minusIco, plus } from "../../../data/sharedData/assetsImports"
+import { cartIsEmpty, trashcan, minusIco, plus, minusActive } from "../../../data/sharedData/assetsImports"
 import { useCartActions } from "../../../hooks/cart/useCartActions"
 import { useFavActions } from "../../../hooks/favorites/useFavActions"
 import { useFavorites } from "../../../hooks/favorites/useFavorites"
@@ -51,17 +51,18 @@ const Cart = () => {
                                                 <img 
                                                     src={isLiked ? item.likeSetsImg : item.setLikeImg} 
                                                     alt="Лайк"
+                                                    className="set-like"
                                                 />
                                             </div>
+                                            <div className="trashcan" onClick={() => removeFromCart(item.id)}>
                                             <img 
                                                 src={trashcan} 
-                                                onClick={() => removeFromCart(item.id)} 
-                                                className="trashcan"
                                                 alt="Удалить"
                                             />
+                                            </div>
                                             <div className="quantity">
                                                 <div className="minus__from-cart" onClick={() => decrementQuantity(item.id)}>
-                                                    <img src={minusIco}/>
+                                                    <img src={item.quantity > 1 ? minusActive: minusIco}/>
                                                 </div>
                                                 <span>{item.quantity}</span>
                                                 <div className="plus__to-cart" onClick={() => incrementQuantity(item.id)}>

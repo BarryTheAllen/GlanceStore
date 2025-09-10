@@ -1,5 +1,7 @@
 import catalogIcon from "../../assets/images/icons/catalog.svg"
 import basketIcon from "../../assets/images/icons/basket.svg"
+import favoritesIcon from "../../assets/images/icons/favoritesicon.svg"
+import minusActive from "../../assets/images/icons/-.svg"
 import profileIcon from "../../assets/images/icons/profile.svg"
 import searchIcon from "../../assets/images/icons/search.svg"
 import heroSliderIcon from "../../assets/images/items/header-slider.jpg"
@@ -154,6 +156,8 @@ import minusIco from "../../assets/images/icons/minus.svg"
 export {
     catalogIcon,
     basketIcon,
+    minusActive,
+    favoritesIcon,
     heroSliderIcon1,
     profileIcon,
     searchIcon,
