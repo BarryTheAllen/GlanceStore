@@ -9,6 +9,7 @@ import tabletCatalog from  "../../data/catalogComponentData/tabletData"
 import tvCatalog from  "../../data/catalogComponentData/tvCatalogData"
 import styles from "./Search.module.css"
 
+
 const Search = () => {
     const [value, setValue] = useState('');
     const [debouncedValue, setDebouncedValue] = useState('');
@@ -65,6 +66,20 @@ const Search = () => {
         
     }, [debouncedValue, productList]);
 
+    const goToSearchResults = () => {
+        navigate('/searchresults', {
+            state: { searchProduct: filteredProducts }
+        })
+    }
+
+
+    const handleKeyDown = (event) => {
+        if(event.key === 'Enter') {
+             event.preventDefault();
+             goToSearchResults()
+        }
+    };
+
     return (
         <div className={styles.search__container}>
             <div className={styles.search__wrapper}>
@@ -77,6 +92,7 @@ const Search = () => {
                     onFocus={() => setIsFocused(true)}
                     onBlur={() => setTimeout(() => setIsFocused(false), 200)}
                     className={styles.search__input}
+                    onKeyDown={handleKeyDown}
                 />
                 {value && (
                     <button onClick={clearSearch} className={styles.clear__button}>

@@ -30,7 +30,7 @@ const CatalogComponent = ({ cardData, category }) => {
         />
         </div>
         <div className="item__container">
-          {filteredProducts.length === 0 ? <div>ничего не найдено</div> : filteredProducts.map(item => (
+          {filteredProducts.map(item => (
             <Card 
               item={{ ...item, id: `${category}_${item.id}` }} 
               key={`${category}_${item.id}`}

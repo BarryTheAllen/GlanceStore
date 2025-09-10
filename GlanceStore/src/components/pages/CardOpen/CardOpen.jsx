@@ -42,7 +42,7 @@ const CardOpen = () => {
                         key={index}
                         src={imgSrc}
                         alt={product.title}
-                        className={styles.img__prewatch}
+                        className={index === activeImg ? styles.img__prewatch_active : styles.img__prewatch}
                         onClick={() => handleImgChange(index)}
                         />
                     ))}

@@ -12,6 +12,8 @@ import Cart from "../pages/Cart/Cart.jsx"
 import Registration from '../pages/Profile/Registration/Registration.jsx'
 import CardOpen from '../pages/CardOpen/CardOpen.jsx'
 import Login from '../pages/Profile/Login/Login.jsx'
+import SearchResult from '../pages/SearchResult/SearchResult.jsx'
+
 
 const catalogData = {
   Phones: {
@@ -81,6 +83,10 @@ const Routing = () => {
             path='/carddescription'
             element={<CardOpen />}
           />
+          <Route
+           path='/searchresults'
+           element={<SearchResult/>}
+           />
         </Route>
       </Routes>
     </>
