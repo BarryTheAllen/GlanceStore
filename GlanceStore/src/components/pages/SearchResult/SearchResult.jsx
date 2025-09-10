@@ -14,7 +14,6 @@ const SearchResult = () => {
     <div className={styles.container}>
         {searchProduct.map((item) => {
             return (
-
                 <Card item={item}/>
             )
         })}

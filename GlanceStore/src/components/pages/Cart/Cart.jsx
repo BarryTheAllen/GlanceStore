@@ -12,11 +12,12 @@ const Cart = () => {
     const { cart } = useCart()
     const { incrementQuantity, decrementQuantity, removeFromCart } = useCartActions()
 
+
+
     const total = cart.reduce((sum, item) => {
         const price = Number(item.price.toString().replace(/\D/g, ''));
         return sum + (price * item.quantity);
     }, 0);
-
     return (
         <div className="cart__container">
             <div className="cart__title">

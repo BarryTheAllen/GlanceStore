@@ -52,6 +52,7 @@ const DynamicCatalog = () => {
   );
 }
 
+
 const Routing = () => {
   return (
     <>
@@ -60,8 +61,7 @@ const Routing = () => {
           <Route index element={<Navigate to="/Home" replace />} />
           <Route
             path="/Home"
-            element={<Home cardData={phonesCatalog} />}
-            category="phones"
+            element={<Home cardData={phonesCatalog} category={"phones"} />}
           />
           <Route
             path="/:category"

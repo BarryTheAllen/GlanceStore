@@ -4,14 +4,21 @@ import { useCart }  from "../../../../hooks/cart/useCart"
 import { useFavorites } from "../../../../hooks/favorites/useFavorites"
 import "./Nav.css"
 
+
 const Nav = () => {
+
     const { cart } = useCart()
     const { favorites } = useFavorites()
+  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0)
+
+
+
+    
   return (
    <>
         <li className="nav__item-icons">
           <Link className="nav__link" to={'/Cart'}>
-          <span className={cart.length > 0 ? "cart-badge active" : "cart-badge"}>{cart.length}</span>
+          <span className={cart.length > 0 ? "cart-badge active" : "cart-badge"}>{totalQuantity}</span>
           <img src={basketIcon} alt="Корзина" className="icon" loading="lazy"/>
           Корзина
           </Link>
