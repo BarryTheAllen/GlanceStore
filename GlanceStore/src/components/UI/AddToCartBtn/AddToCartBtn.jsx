@@ -1,6 +1,6 @@
 import { useCart } from "../../../hooks/cart/useCart";
 import { useCartActions } from "../../../hooks/cart/useCartActions";
-import "./AddToCartBtn.css"
+import "./AddToCartBtn.css";
 
 const AddToCartBtn = ({item}) => {
 

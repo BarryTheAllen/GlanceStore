@@ -14,8 +14,6 @@ import {
     yandexspeakerslight,
     yandexspeakerslight1,
     yandexspeakerslight2,
-    setlike,
-    likeSet
 } from "../sharedData/assetsImports"
 
 const speakerCatalog = [
@@ -27,8 +25,6 @@ const speakerCatalog = [
         price: 84999,
         discountPrice: 87999,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Компактная умная колонка Яндекс.Станция Миди с голосовым помощником Алисой. Качественный звук, управление умным домом и доступ к тысячам треков."
     },
     {
@@ -39,8 +35,6 @@ const speakerCatalog = [
         price: 42980,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Мощная Яндекс.Станция Макс с премиальным звуком и большим экраном. Идеальна для музыки, видео и управления умным домом через голосового помощника."
     },
     {
@@ -51,8 +45,6 @@ const speakerCatalog = [
         price: 11999,
         discountPrice: 14117,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Мощная портативная аудиосистема JBL Partybox 710 для вечеринок. Невероятная громкость, световые эффекты и длительное время работы от батареи."
     },
     {
@@ -63,8 +55,6 @@ const speakerCatalog = [
         price: 17665,
         discountPrice: 87999,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Стильная аудиосистема Fiero Soundfall HS600 с современным дизайном и качественным звуком. Подходит для домашнего использования и небольших вечеринок."
     },
     {
@@ -75,8 +65,6 @@ const speakerCatalog = [
         price: 11999,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Миниатюрная и яркая Яндекс.Станция Мини 3 в фиолетовом цвете. Компактный размер, голосовое управление и интеграция с сервисами Яндекса."
     },
 ]

@@ -25,8 +25,6 @@ import { iphone14,
         xiaominote14,
         xiaominote141,
         xiaominote142,
-        setlike,
-        likeSet
     } from "../sharedData/assetsImports"
 
 const phonesCatalog = [
@@ -38,8 +36,6 @@ const phonesCatalog = [
         price: 84999,
         discountPrice: 87999,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Флагманский смартфон Apple iPhone 14 с памятью 128GB. Мощный процессор, продвинутая камера и яркий дисплей. Стильный дизайн и высочайшее качество сборки."
     },
     {
@@ -50,8 +46,6 @@ const phonesCatalog = [
         price: 42980,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Популярный iPhone 13 с памятью 64GB. Отличное сочетание производительности и доступности. Поддержка 5G, качественные камеры и фирменный дизайн Apple."
     },
     {
@@ -62,8 +56,6 @@ const phonesCatalog = [
         price: 11999,
         discountPrice: 14117,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Бюджетный смартфон HUAWEI nova Y61 с хорошей камерой и автономностью. Современный дизайн и достойная производительность для повседневных задач."
     },
     {
@@ -74,8 +66,6 @@ const phonesCatalog = [
         price: 17665,
         discountPrice: 87999,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Xiaomi Redmi с объемом памяти 128GB предлагает отличное соотношение цены и качества. Большой экран, долгая батарея и производительность для всех задач."
     },
     {
@@ -86,8 +76,6 @@ const phonesCatalog = [
         price: 54999,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Samsung Galaxy S25 FE 8/256GB Идеальный баланс цены и возможностей флагмана. Мощный процессор, огромная память 8/256 ГБ и профессиональная камера в элегантном темно-синем корпусе."
     },
     {
@@ -98,8 +86,6 @@ const phonesCatalog = [
         price: 129999,
         discountPrice: 151999,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Смартфон Apple iPhone 16 Pro 256GB Desert Titanium — новый цвет пустыни в культовом титановом дизайне. Мощь чипа A18 Pro, инновационная камера и исключительная прочность для тех, кто задает тренды."
     },
     {
@@ -110,8 +96,6 @@ const phonesCatalog = [
         price: 88999,
         discountPrice: 84999,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Смартфон Huawei Pura 80 Pro 12/512GB Black — это воплощение мощи и элегантности. Флагман с огромной памятью и инновационной камерой для тех, кто создает будущее уже сегодня."
     },
     {
@@ -122,8 +106,6 @@ const phonesCatalog = [
         price: 29999,
         discountPrice: 47756,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Смартфон Oppo Reno 12F 8/512GB Matte Grey — стиль и мощь в матовом сером корпусе. Высокая производительность, огромная память и инновационные функции для уверенного использования каждый день."
     },
     {
@@ -134,8 +116,6 @@ const phonesCatalog = [
         price: 11999,
         discountPrice: 14117,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Смартфон Xiaomi Redmi Note 14 Pro+ 5G 12/512GB Lavender Purple — мощь и эстетика в нежном лавандовом оттенке. Высокая производительность, поддержка 5G и огромная память для самых смелых задач."
     },
 ]

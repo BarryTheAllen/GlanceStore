@@ -1,4 +1,4 @@
-import { ardor, ardor1, ardor2, msi, msi1, msi2, dexp, dexp1, dexp2, iru, iru1, iru2, tecno, tecno1, tecno2, lenovo, lenovo1, lenovo2, asus, asus1, asus2, hp, hp1, hp2, lyambda, lyambda1, lyambda2, setlike, likeSet } from "../sharedData/assetsImports"
+import { ardor, ardor1, ardor2, msi, msi1, msi2, dexp, dexp1, dexp2, iru, iru1, iru2, tecno, tecno1, tecno2, lenovo, lenovo1, lenovo2, asus, asus1, asus2, hp, hp1, hp2, lyambda, lyambda1, lyambda2, } from "../sharedData/assetsImports"
 
 const computersCatalog = [
     {
@@ -9,8 +9,6 @@ const computersCatalog = [
         price: 84999,
         discountPrice: 87999,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Игровой компьютер ARDOR GAMING NEO M143 с мощным процессором и современной видеокартой для комфортного гейминга. Отличное решение для любителей игр с высокими требованиями."
     },
     {
@@ -21,8 +19,6 @@ const computersCatalog = [
         price: 42980,
         discountPrice: 47756,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "512",
         RAM: "8",
         brand: "Msi",
@@ -37,8 +33,6 @@ const computersCatalog = [
         price: 11999,
         discountPrice: 14117,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "128",
         RAM: "16",
         brand: "Dexp",
@@ -53,8 +47,6 @@ const computersCatalog = [
         price: 17665,
         discountPrice: 87999,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "256",
         RAM: "4",
         brand: "Iru",
@@ -69,8 +61,6 @@ const computersCatalog = [
         price: 11999,
         discountPrice: 47756,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "512",
         RAM: "16",
         brand: "Tecno",
@@ -85,8 +75,6 @@ const computersCatalog = [
         price: 75999,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "256",
         RAM: "16",
         brand: "Lenovo",
@@ -101,8 +89,6 @@ const computersCatalog = [
         price: 11999,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "256",
         RAM: "16",
         brand: "Asus",
@@ -117,8 +103,6 @@ const computersCatalog = [
         price: 42980,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "256",
         RAM: "16",
         brand: "Hp",
@@ -133,8 +117,6 @@ const computersCatalog = [
         price: 84999,
         discountPrice: 47756,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         builtInMemory: "256",
         RAM: "16",
         brand: "Lyambda",

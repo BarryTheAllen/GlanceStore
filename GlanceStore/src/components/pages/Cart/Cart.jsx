@@ -1,23 +1,22 @@
-import "./Cart.css"
-import { useCart }  from "../../../hooks/cart/useCart"
-import { Link } from "react-router"
-import { cartIsEmpty, trashcan, minusIco, plus, minusActive } from "../../../data/sharedData/assetsImports"
-import { useCartActions } from "../../../hooks/cart/useCartActions"
-import { useFavActions } from "../../../hooks/favorites/useFavActions"
-import { useFavorites } from "../../../hooks/favorites/useFavorites"
+import "./Cart.css";
+import { useCart }  from "../../../hooks/cart/useCart";
+import { Link } from "react-router";
+import { cartIsEmpty, trashcan, minusIco, plus, minusActive } from "../../../data/sharedData/assetsImports";
+import { useCartActions } from "../../../hooks/cart/useCartActions";
+import AddToFavBtn from "../../UI/AddToFavBtn/AddToFavBtn";
+
 
 const Cart = () => {
-    const { toggleLike } = useFavActions()
-    const { favorites } = useFavorites()
-    const { cart } = useCart()
-    const { incrementQuantity, decrementQuantity, removeFromCart } = useCartActions()
 
+    const { cart } = useCart();
 
+    const { incrementQuantity, decrementQuantity, removeFromCart } = useCartActions();
 
     const total = cart.reduce((sum, item) => {
         const price = Number(item.price.toString().replace(/\D/g, ''));
         return sum + (price * item.quantity);
     }, 0);
+
     return (
         <div className="cart__container">
             <div className="cart__title">
@@ -33,11 +32,9 @@ const Cart = () => {
                 </div>
                 
             ) : (
-            <>
+            <div className="cart__list-wrapper">
                 <ul className="cart__list">
-                    {cart.map((item, index) => {
-                        const isLiked = favorites.some(favItem => favItem.id === item.id);
-                        
+                    {cart.map((item, index) => {    
                         return (
                             <div key={index}>
                                 <li className="cart__list-item">
@@ -48,13 +45,7 @@ const Cart = () => {
                                             <p className="item__price-cart">{item.price.toLocaleString('ru-RU')} ₽</p>
                                         </div>
                                         <div className="wrapper__iner-features">
-                                            <div className="set-like-btn" onClick={() => toggleLike(item)}>
-                                                <img 
-                                                    src={isLiked ? item.likeSetsImg : item.setLikeImg} 
-                                                    alt="Лайк"
-                                                    className="set-like"
-                                                />
-                                            </div>
+                                            <AddToFavBtn item={item} />
                                             <div className="trashcan" onClick={() => removeFromCart(item.id)}>
                                             <img 
                                                 src={trashcan} 
@@ -76,10 +67,12 @@ const Cart = () => {
                             </div>
                         )
                     })}
+                </ul>
+                <div className="checkout__block">
                     <p>Сумма заказа: {total.toLocaleString('ru-RU')} ₽</p>
                     <button className="checkout-btn">Перейти к оформлению</button>
-                </ul>
-            </>
+                </div>
+            </div>
         )}
     </div>
 )

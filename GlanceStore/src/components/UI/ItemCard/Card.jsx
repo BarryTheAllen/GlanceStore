@@ -1,17 +1,12 @@
 import Slider from "../../pages/HomeSection/slider/Slider";
 import { useNavigate } from "react-router";
 import "../ItemCard/Card.css";
-import { useFavActions } from "../../../hooks/favorites/useFavActions";
-import { useFavorites } from "../../../hooks/favorites/useFavorites";
 import AddToCartBtn from "../AddToCartBtn/AddToCartBtn";
+import AddToFavBtn from "../AddToFavBtn/AddToFavBtn";
+
 const Card = ({ item }) => {
     const navigate = useNavigate();
     
-    const { favorites } = useFavorites();
-    const { toggleLike } = useFavActions();
-
-    const isLiked = favorites?.some(favItem => favItem.id === item.id) || false;
-
     const handleOpenCard = () => {
         navigate("/carddescription", {
             state: { product: item },
@@ -36,13 +31,7 @@ const Card = ({ item }) => {
                 </div>
                 <div className="isAviavable__wrapper">
                     <p className={item.isAviavable ? "aviavable" : "not__aviavable"}>{item.isAviavable ? "В наличии" : "Нет в наличии"}</p>
-                    <div className="set-like-btn" onClick={() => toggleLike(item)}>
-                        <img 
-                            src={isLiked ? item.likeSetsImg : item.setLikeImg} 
-                            alt="Лайк"
-                            className="set__like"
-                        />
-                    </div>
+                        <AddToFavBtn item={item} />
                 </div>
             </div>
             <AddToCartBtn item={item} />

@@ -14,8 +14,6 @@ import {
     falcon,
     falcon1,
     falcon2,
-    setlike,
-    likeSet
 } from "../sharedData/assetsImports"
 
 const tvCatalog = [
@@ -27,8 +25,6 @@ const tvCatalog = [
         price: 84999,
         discountPrice: 87999,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "43-дюймовый телевизор Xiaomi TV A 2025 года с современным дизайном и Smart TV. Яркий экран, качественное изображение и доступ к множеству приложений и сервисов."
     },
     {
@@ -39,8 +35,6 @@ const tvCatalog = [
         price: 42980,
         discountPrice: 47756,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Бюджетный 43-дюймовый телевизор DEXP A431 в сером корпусе. Хорошее качество изображения, простой интерфейс и надежная работа для ежедневного просмотра."
     },
     {
@@ -51,8 +45,6 @@ const tvCatalog = [
         price: 11999,
         discountPrice: 14117,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "55-дюймовый телевизор TCL 55C6K с 4K разрешением и технологией HDR. Насыщенные цвета, высокая контрастность и Smart TV с голосовым управлением."
     },
     {
@@ -63,8 +55,6 @@ const tvCatalog = [
         price: 17665,
         discountPrice: 87999,
         isAviavable: true,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "55-дюймовый Samsung UE55DU7100 с Crystal UHD дисплеем. Реалистичное изображение, платформа Tizen и возможность управления голосом через Bixby."
     },
     {
@@ -75,8 +65,6 @@ const tvCatalog = [
         price: 11999,
         discountPrice: 47756,
         isAviavable: false,
-        setLikeImg: setlike,
-        likeSetsImg: likeSet,
         description: "Большой 65-дюймовый телевизор iFFALCON 65U85 с 4K разрешением. Современный дизайн, мощный звук и Smart TV функционал для кинопросмотров и игр."
     },
 ]

@@ -1,16 +1,36 @@
 .cart__container {
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
     height: 100vh;
 }
 
 .cart__list {
     display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+    scrollbar-width: none;
+}
+
+.cart__list::-webkit-scrollbar {
+    display: none;
+}
+
+.checkout__block {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    list-style: none;
-    flex-direction: column;
-    flex-shrink: 1;
+    position: sticky;
+    top: 20px;
+}
+
+.cart__list-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .cart__list-item {
@@ -21,7 +41,6 @@
     border-bottom: 1px solid var(--seryy);
     border-top: 1px solid var(--seryy);
     gap: 5px;
-    flex-shrink: 1;
     margin: 10px;
 }
 
@@ -143,17 +162,6 @@
     100% { transform: translateX(0); }
 }
 
-.set-like-btn {
-    width: 20px;
-    height: 20px;
-}
-
-.set-like:hover {
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-}
-
 .back-to-catalog {
     display: flex;
     border-radius: 8px;
@@ -189,19 +197,40 @@
 @media (max-width: 768px) {
     .cart__container {
         height: auto;
-        padding: 0 15px;
+        padding: 0 15px 120px;
+    }
+    
+    .cart__list-wrapper {
+        flex-direction: column;
+        min-height: calc(100vh - 150px);
+    }
+    
+    .cart__list {
+        overflow-y: visible;
+        max-height: none;
+    }
+    
+    .checkout__block {
+        position: relative;
+        top: 0;
+        align-self: center;
+        margin-top: auto;
+        padding: 15px;
     }
     
     .cart__list-item {
         padding: 15px;
         gap: 15px;
         margin: 5px;
+        flex-direction: column;
+        text-align: center;
     }
     
     .cart__title {
         flex-direction: column;
         gap: 5px;
         text-align: center;
+        margin-top: 15px;
     }
     
     .cart__title h1 {
@@ -214,6 +243,8 @@
     
     .wrapper__iner-features {
         gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .quantity {
@@ -234,6 +265,7 @@
         margin-top: 50px;
         gap: 30px;
         text-align: center;
+        padding-bottom: 150px;
     }
     
     .cart__is-empty p {
@@ -262,5 +294,17 @@
     .checkout-btn {
         height: 40px;
         font-size: 14px;
+    }
+    
+    .wrapper__iner-features {
+        gap: 10px;
+    }
+    
+    .checkout__block {
+        padding: 10px;
+    }
+    
+    .cart__container {
+        padding-bottom: 100px;
     }
 }
