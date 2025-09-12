@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
    <>
-        <li className="nav__item-icons">
+       <li className="nav__item-icons">
           <Link className="nav__link" to={'/Cart'}>
           <span className={cart.length > 0 ? "cart-badge active" : "cart-badge"}>{totalQuantity}</span>
           <img src={basketIcon} alt="Корзина" className="icon" loading="lazy"/>
@@ -27,7 +27,7 @@ const Nav = () => {
           </Link>
         </li>
         <li className="nav__item-icons">
-          <Link className="nav__link">
+          <Link className="nav__link" to={"/Favorites"}>
           <span className={favorites.length > 0 ? "fav-badge active" : "fav-badge"}>{favorites.length}</span>
           <img src={favoritesIcon} alt="Избранное" className="icon" />
           Избранное

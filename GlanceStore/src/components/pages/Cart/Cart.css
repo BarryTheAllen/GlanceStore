@@ -198,6 +198,10 @@
     .cart__container {
         height: auto;
         padding: 0 15px 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .cart__list-wrapper {

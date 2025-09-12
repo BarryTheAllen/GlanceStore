@@ -13,7 +13,8 @@ import Registration from '../pages/Profile/Registration/Registration.jsx'
 import CardOpen from '../pages/CardOpen/CardOpen.jsx'
 import Login from '../pages/Profile/Login/Login.jsx'
 import SearchResult from '../pages/SearchResult/SearchResult.jsx'
-
+import Favorites from "../pages/Favorites/Favorites.jsx"
+import Order from '../pages/OrderPage/Order.jsx'
 
 const catalogData = {
   Phones: {
@@ -86,6 +87,14 @@ const Routing = () => {
           <Route
            path='/searchresults'
            element={<SearchResult/>}
+           />
+           <Route
+            path='/Favorites'
+            element={<Favorites/>}
+           />
+           <Route
+           path='/Order'
+           element={<Order/>}
            />
         </Route>
       </Routes>

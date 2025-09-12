@@ -70,7 +70,7 @@ const Cart = () => {
                 </ul>
                 <div className="checkout__block">
                     <p>Сумма заказа: {total.toLocaleString('ru-RU')} ₽</p>
-                    <button className="checkout-btn">Перейти к оформлению</button>
+                    <Link className="checkout-btn" to={"/Order"}>Перейти к оформлению</Link>
                 </div>
             </div>
         )}
