@@ -4,8 +4,8 @@ import styles from "./Login.module.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
   const handleSubmit = (e) => {
