@@ -10,14 +10,15 @@ const CVV = forwardRef((props, ref) => {
         setCardCVV(value)
         if(cardCVV.length < 3) {
             setCardCVVErr("CVV должен быть не меньше 3 цифр")
-            return;
+            return
+        } else {
+            setCardCVVErr("")
         }
         if(!cardCVV) {
             setCardCVVErr("это поле обязательно")
             return;
         } else {
             setCardCVVErr("")
-            return;
         }
     }
 

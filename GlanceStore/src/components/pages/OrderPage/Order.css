@@ -142,21 +142,3 @@
     transform: translateY(0);
   }
 }
-
-.add__card-btn {
-    border: 1px solid var(--seryy-temnee);
-    border-radius: 8px;
-    padding: 12px;
-    width: 154px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    cursor: pointer;
-    color: var(--chernyy);
-    height: 53px;
-}
-
-.add__card-btn:hover {
-    transform: scale(1.02);
-}
