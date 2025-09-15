@@ -1,8 +1,9 @@
-import CardModal from "./CardModal/CardModal";
+import CardFormModal from "./CardFormModal/CardFormModal";
 import CardForm from "./CardForm/CardForm";
 import CardItem from "./CardItem/CardItem";
 import { useState } from "react";
 import styles from "./Payment.module.css"
+import CardModal from "./CardModalItem/CardModal";
 
 const Payment = () => {
 
@@ -20,19 +21,15 @@ const Payment = () => {
     <div className={styles.payment}>
         <div className={styles.cardList}>
             {cards.map((card, index) => (
-                <CardItem   
-                    key={index}
-                    cardNumber={card.cardNumber}
-                    expiryDate={card.expiryDate}
-                />
+                <CardItem key={index} cardNumber={card.cardNumber} expiryDate={card.expiryDate} />
             ))}
         </div>
         <button className={styles.addCardBtn} onClick={() => setIsOpen(true)}>
             Новая карта +
         </button>
-        <CardModal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <CardFormModal isOpen={isOpen} onClose={() => setIsOpen(false)}>
             <CardForm onClose={() => setIsOpen(false)} onAddCard={handleAddCard}/>
-        </CardModal>
+        </CardFormModal>
     </div>
     </div>
   )

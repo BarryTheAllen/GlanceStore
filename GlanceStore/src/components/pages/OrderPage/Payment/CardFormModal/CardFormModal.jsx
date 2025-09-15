@@ -1,8 +1,8 @@
-import styles from './CardModal.module.css'
+import styles from './CardFormModal.module.css'
 import { createPortal } from 'react-dom'
 import { useEffect } from 'react'
 
-const CardModal = ({ isOpen, onClose, children }) => {
+const CardFormModal = ({ isOpen, onClose, children }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
@@ -33,4 +33,4 @@ const CardModal = ({ isOpen, onClose, children }) => {
   )
 }
 
-export default CardModal
+export default CardFormModal

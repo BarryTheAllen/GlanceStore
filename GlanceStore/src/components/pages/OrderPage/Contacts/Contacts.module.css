@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.input {
+    margin: 5px;
+    border: 1px solid var(--seryy-temnee);
+    border-radius: 8px;
+    padding: 11px 8px 11px 16px;
+    width: 343px;
+    height: 41px;
+}
+
+.input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--seryy-temnee);
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--chernyy);
+}

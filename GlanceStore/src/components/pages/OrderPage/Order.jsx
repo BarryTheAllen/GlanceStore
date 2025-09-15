@@ -2,6 +2,8 @@ import "./Order.css"
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Payment from "./Payment/Payment";
+import Contacts from "./Contacts/Contacts";
+
 
 
 const Order = () => {
@@ -41,12 +43,7 @@ const Order = () => {
              >Служба доставки <FaArrowRight/></p>
         </div>
         </div>
-        <form className="form">
-            <h3 className="title">Контактные данные</h3>
-            <input type="text" placeholder="Имя *" className="input" />
-            <input type="number" placeholder="Телефон *" className="input" />
-            <input type="email" placeholder="Email" className="input" />
-        </form>
+        <Contacts />
         <Payment />
     </div>
   )
