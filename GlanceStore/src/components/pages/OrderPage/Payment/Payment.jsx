@@ -3,7 +3,6 @@ import CardForm from "./CardForm/CardForm";
 import CardItem from "./CardItem/CardItem";
 import { useState } from "react";
 import styles from "./Payment.module.css"
-import CardModal from "./CardModalItem/CardModal";
 
 const Payment = () => {
 
@@ -17,11 +16,13 @@ const Payment = () => {
 
   return (
     <div className={styles.container}>
-        <h3 className="title">Оплата</h3>
+    <h3 className="title">Оплата</h3>
     <div className={styles.payment}>
         <div className={styles.cardList}>
             {cards.map((card, index) => (
-                <CardItem key={index} cardNumber={card.cardNumber} expiryDate={card.expiryDate} />
+                <>
+                <CardItem key={index} cardNumber={card.cardNumber} expiryDate={card.expiryDate} cvv={card.cvv} onClick={() => setIsOpen(true)} />
+                </>
             ))}
         </div>
         <button className={styles.addCardBtn} onClick={() => setIsOpen(true)}>
