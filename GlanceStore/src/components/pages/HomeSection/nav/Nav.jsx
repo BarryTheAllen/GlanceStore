@@ -15,7 +15,7 @@ const Nav = () => {
    <>
        <li className="nav__item-icons">
           <Link className="nav__link" to={'/Cart'}>
-          <span className={cart.length > 0 ? "cart-badge active" : "cart-badge"}>{totalQuantity}</span>
+          {totalQuantity > 0 && <span className={cart.length > 0 ? "cart-badge active" : "cart-badge"}>{totalQuantity}</span>}
           <img src={basketIcon} alt="Корзина" className="icon" loading="lazy"/>
           Корзина
           </Link>

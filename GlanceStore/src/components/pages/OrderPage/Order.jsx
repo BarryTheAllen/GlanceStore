@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Payment from "./Payment/Payment";
 import Contacts from "./Contacts/Contacts";
+import Total from "../../../features/Total/total";
+import DefaultBtn from "../../UI/DefaultBtn/DefaultBtn";
 
 
 
@@ -45,6 +47,8 @@ const Order = () => {
         </div>
         <Contacts />
         <Payment />
+        <Total/>
+        <DefaultBtn text={"Оплатить"} width={267} height={49}/>
     </div>
   )
 }

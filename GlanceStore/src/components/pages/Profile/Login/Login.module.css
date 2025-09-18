@@ -47,19 +47,6 @@
     color: var(--seryy-temnee);
 }
 
-.btn__submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-    color: var(--belyy);
-    font-size: 15px;
-    font-weight: 400;
-    background: var(--siniy);
-    border-radius: 15px;
-    padding: 5px;
-}
 
 .error {
   color: #ff4d4f;

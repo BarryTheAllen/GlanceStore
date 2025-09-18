@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { useState } from "react";
 import styles from "./Registration.module.css";
+import DefaultBtn from "../../../UI/DefaultBtn/DefaultBtn";
 
 const Registration = () => {
   const [email, setEmail] = useState("");
@@ -54,7 +55,7 @@ const Registration = () => {
           />
           {passwordError && <span className={styles.error}>{passwordError}</span>}
           
-          <button type="submit" className={styles.btn__submit}>Регистрация</button>
+           <DefaultBtn text={"Регистрация"} width={150} height={40}/>
         </form>
         <Link to={"/Login"} className={styles.link}>Уже есть аккаунт? Войти</Link>
       </div>

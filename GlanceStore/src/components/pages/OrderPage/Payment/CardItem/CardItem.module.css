@@ -23,7 +23,7 @@
 
 .card:hover {
     transform: scale(1.03);
-    transition: all .2s ease-in-out;
+    transition: all .2s ease;
 }
 
 .card__chip {

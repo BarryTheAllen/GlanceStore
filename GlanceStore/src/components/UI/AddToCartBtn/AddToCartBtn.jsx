@@ -7,7 +7,6 @@ const AddToCartBtn = ({item}) => {
     const { cart } = useCart();
     const { handleCart } = useCartActions();
     const isInCart = cart?.some(cartItem => cartItem.id === item.id) || false;
-
     return (
         <>
         <button 

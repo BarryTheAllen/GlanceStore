@@ -37,7 +37,8 @@ export const cartSlice = createSlice({
         },
         removeFromCart: (state, { payload: itemId }) => {
             return state.filter(item => item.id !== itemId);
-        }
+        },
+        
     }
 })
 
