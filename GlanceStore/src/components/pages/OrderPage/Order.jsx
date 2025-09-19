@@ -47,7 +47,7 @@ const Order = () => {
         </div>
         <Contacts />
         <Payment />
-        <Total/>
+        <Total />
         <DefaultBtn text={"Оплатить"} width={267} height={49}/>
     </div>
   )
