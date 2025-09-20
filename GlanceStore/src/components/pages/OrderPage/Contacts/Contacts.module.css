@@ -7,7 +7,6 @@
 }
 
 .input {
-    margin: 5px;
     border: 1px solid var(--seryy-temnee);
     border-radius: 8px;
     padding: 11px 8px 11px 16px;
@@ -27,4 +26,8 @@
     font-weight: 400;
     font-size: 18px;
     color: var(--chernyy);
+}
+
+.error {
+    color: red;
 }

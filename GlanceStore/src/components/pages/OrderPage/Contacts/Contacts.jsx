@@ -9,12 +9,21 @@ const Contacts = () => {
   const [ name, setName ] = useState("");
   const [ nameErr, setNameErr ] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let isValid = true;
-    if(name === nameErr) {
-      isValid = false;
+  const handleName = (value) => {
+    setName(value)
+    if(name.length < 1) {
       setNameErr("Имя не должно быть пустым");
+    } else {
+      setNameErr("")
+    }
+  };
+  
+  const handleEmail = (value) => {
+    setEmail(value);
+    if(!email.includes('@')) {
+      setEmailErr("Введите корректный email");
+    } else if(email.includes("([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)")) {
+      setEmailErr("sdadas")
     }
   };
 
@@ -24,12 +33,23 @@ const Contacts = () => {
         <input
         value={name}
         type="text"
+        onBlur={e => handleName(e.target.value)}
         placeholder="Имя *"
         className={styles.input}
-        onChange={(e) => setName(e.target.value)}
+        onChange={e => handleName(e.target.value)}
+        onClick={() => setNameErr("")}
         />
+        {nameErr && <span className={styles.error}>{nameErr}</span>}
         <input type="number" placeholder="Телефон *" className={styles.input} />
-        <input type="email" placeholder="Email" className={styles.input} />
+        <input
+        type="email"
+        placeholder="Email"
+        onBlur={e => handleEmail(e.target.value)}
+        onChange={e => handleEmail(e.target.value)}
+        className={styles.input}
+        onClick={() => setEmailErr("")}
+        />
+        {emailErr && <span className={styles.error}>{emailErr}</span>}
     </form>
   )
 }

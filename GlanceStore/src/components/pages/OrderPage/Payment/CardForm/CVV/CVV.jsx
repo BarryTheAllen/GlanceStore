@@ -30,7 +30,7 @@ const CVV = forwardRef((props, ref) => {
         type="text"
         placeholder="123"
         value={cardCVV}
-        onBlur={(e) => handleCVV(e.target.value)}
+        onBlur={e => handleCVV(e.target.value)}
         onChange={e => handleCVV(e.target.value)}
         maxLength={3}
         minLength={3}
