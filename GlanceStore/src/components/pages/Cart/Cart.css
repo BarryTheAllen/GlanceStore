@@ -177,22 +177,6 @@
     align-items: center;
 }
 
-.checkout-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 10px 17px;
-    width: 267px;
-    height: 49px;
-    background: var(--siniy);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--belyy);
-    margin: 20px;
-    cursor: pointer;
-}
 
 @media (max-width: 768px) {
     .cart__container {

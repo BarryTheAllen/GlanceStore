@@ -11,7 +11,7 @@ const Contacts = () => {
 
   const handleName = (value) => {
     setName(value)
-    if(name.length < 1) {
+    if(!value) {
       setNameErr("Имя не должно быть пустым");
     } else {
       setNameErr("")
@@ -20,12 +20,28 @@ const Contacts = () => {
   
   const handleEmail = (value) => {
     setEmail(value);
-    if(!email.includes('@')) {
+    const emailRegExp = /[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/
+    if(!value) {
+      setEmailErr("Email не должен быть пустым");
+    }
+    else if(!email.includes('@')) {
       setEmailErr("Введите корректный email");
-    } else if(email.includes("([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)")) {
-      setEmailErr("sdadas")
+    }
+    else if (emailRegExp.test(email)) {
+      setEmailErr("Введите корректный email");
     }
   };
+
+  const handlePhone = (value) => {
+    setPhone(value);
+    const phoneRegExp = /^(\+7|7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/
+    if(!phoneRegExp.test(phone)) {
+      setPhoneErr("Введите корректный номер телефона");
+    } else {
+      setPhoneErr("");
+    }
+  };
+
 
   return (
     <form className={styles.form}>
@@ -33,18 +49,23 @@ const Contacts = () => {
         <input
         value={name}
         type="text"
-        onBlur={e => handleName(e.target.value)}
         placeholder="Имя *"
         className={styles.input}
         onChange={e => handleName(e.target.value)}
         onClick={() => setNameErr("")}
         />
         {nameErr && <span className={styles.error}>{nameErr}</span>}
-        <input type="number" placeholder="Телефон *" className={styles.input} />
+        <input
+        type="tel"
+        placeholder="Телефон *"
+        onChange={e => handlePhone(e.target.value)}
+        className={styles.input}
+        onClick={() => setPhoneErr("")}
+        />
+        {phoneErr && <span className={styles.error}>{phoneErr}</span>}
         <input
         type="email"
         placeholder="Email"
-        onBlur={e => handleEmail(e.target.value)}
         onChange={e => handleEmail(e.target.value)}
         className={styles.input}
         onClick={() => setEmailErr("")}

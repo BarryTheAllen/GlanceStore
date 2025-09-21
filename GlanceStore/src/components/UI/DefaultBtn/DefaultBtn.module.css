@@ -8,6 +8,7 @@
     color: var(--belyy);
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 10px;
 }
 
 .btn:hover {

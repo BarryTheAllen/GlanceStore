@@ -5,6 +5,7 @@ import Total from "../../../features/Total/total";
 import { cartIsEmpty, trashcan, minusIco, plus, minusActive } from "../../../data/sharedData/assetsImports";
 import { useCartActions } from "../../../hooks/cart/useCartActions";
 import AddToFavBtn from "../../UI/AddToFavBtn/AddToFavBtn";
+import DefaultBtn from "../../UI/DefaultBtn/DefaultBtn"
 
 
 const Cart = () => {
@@ -65,7 +66,7 @@ const Cart = () => {
                 </ul>
                 <div className="checkout__block">
                     <Total/>
-                    <Link className="checkout-btn" to={"/Order"}>Перейти к оформлению</Link>
+                    <Link className="checkout-btn" to={"/Order"}><DefaultBtn width={267} height={49} text={"перейти к оформлению"}/></Link>
                 </div>
             </div>
         )}
