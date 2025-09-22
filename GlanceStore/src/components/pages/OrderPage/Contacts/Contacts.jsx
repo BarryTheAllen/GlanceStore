@@ -20,14 +20,10 @@ const Contacts = () => {
   
   const handleEmail = (value) => {
     setEmail(value);
-    const emailRegExp = /[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/
     if(!value) {
       setEmailErr("Email не должен быть пустым");
     }
     else if(!email.includes('@')) {
-      setEmailErr("Введите корректный email");
-    }
-    else if (emailRegExp.test(email)) {
       setEmailErr("Введите корректный email");
     }
   };
@@ -42,7 +38,6 @@ const Contacts = () => {
     }
   };
 
-
   return (
     <form className={styles.form}>
         <h3 className={styles.title}>Контактные данные</h3>
@@ -51,6 +46,7 @@ const Contacts = () => {
         type="text"
         placeholder="Имя *"
         className={styles.input}
+        onBlur={e => handleName(e.target.value)}
         onChange={e => handleName(e.target.value)}
         onClick={() => setNameErr("")}
         />
@@ -60,6 +56,7 @@ const Contacts = () => {
         placeholder="Телефон *"
         onChange={e => handlePhone(e.target.value)}
         className={styles.input}
+        onBlur={e => handlePhone(e.target.value)}
         onClick={() => setPhoneErr("")}
         />
         {phoneErr && <span className={styles.error}>{phoneErr}</span>}
@@ -68,6 +65,7 @@ const Contacts = () => {
         placeholder="Email"
         onChange={e => handleEmail(e.target.value)}
         className={styles.input}
+        onBlur={e => handleEmail(e.target.value)}
         onClick={() => setEmailErr("")}
         />
         {emailErr && <span className={styles.error}>{emailErr}</span>}

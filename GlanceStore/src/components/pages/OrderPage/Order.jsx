@@ -5,6 +5,7 @@ import Payment from "./Payment/Payment";
 import Contacts from "./Contacts/Contacts";
 import Total from "../../../features/Total/total";
 import DefaultBtn from "../../UI/DefaultBtn/DefaultBtn";
+import { Map, YMaps } from "@pbe/react-yandex-maps";
 
 
 
@@ -45,6 +46,9 @@ const Order = () => {
              >Служба доставки <FaArrowRight/></p>
         </div>
         </div>
+        <YMaps>
+          <Map defaultState={{center: [55.75, 37.57], zoom: 9}} style={{width: "200px", height: "200px"}} />
+        </YMaps>
         <Contacts />
         <Payment />
         <Total />
